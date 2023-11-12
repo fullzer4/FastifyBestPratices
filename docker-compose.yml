@@ -10,7 +10,7 @@ services:
             - POSTGRES_USER=fullzer4
             - POSTGRES_DB=SAEP
         volumes:
-            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+            - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
     pgadmin:
         image: dpage/pgadmin4
         ports:
