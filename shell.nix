@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
   packages = with pkgs; [
-    nodejs
-    yarn
+    gradle
+    jdk8
   ];
 }
